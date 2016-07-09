@@ -37,7 +37,7 @@ class DeviceDetect extends \yii\base\Component {
 		$this->_mobileDetect = new MobileDetect();
 		parent::init();
 
-		if ($this->setParams) {
+		/*if ($this->setParams) {
 			\Yii::$app->params['devicedetect'] = [
 				'isMobile' => $this->_mobileDetect->isMobile(),
 				'isTablet' => $this->_mobileDetect->isTablet()
@@ -46,7 +46,7 @@ class DeviceDetect extends \yii\base\Component {
 			\Yii::$app->params['devicedetect']['isDesktop'] =
 				!\Yii::$app->params['devicedetect']['isMobile'] &&
 				!\Yii::$app->params['devicedetect']['isTablet'];
-		}
+		}*/
 
 		if ($this->setAlias) {
 			if ($this->_mobileDetect->isMobile()) {
